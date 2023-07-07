@@ -1,0 +1,133 @@
+
+/* Agregamos la fuente que vamos a utilizar en nuestro sitio*/
+@import url("https://fonts.googleapis.com/css2?family=Monserrat:wght@200;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Monserrat";
+}
+
+body {
+  scroll-behavior: smooth;
+}
+
+
+/* ----------------------SECCIÓN INICIO---------------------- */
+#inicio {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.1)),
+    url("img/Universe.jpeg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.container header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  top: 0;
+}
+
+.container-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.logo-container {
+  width: 200px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  width: 100%;
+  height: auto;
+}
+
+.nav-ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-ul li a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: 0.8s;
+}
+
+.nav-ul li a:hover {
+  color: #6C757D;
+}
+
+#icono-nav {
+  color: #fff;
+  display: none;
+}
+
+.redes a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+  transition: 0.8s;
+}
+
+.redes a:hover {
+  color: #6C757D;
+}
+
+.presentation {
+  max-width: 1100px;
+  height: 100vh;
+  margin: auto;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.bienvenida {
+  font-size: 16ox;
+  margin-bottom: 20px;
+  letter-spacing: 5px;
+}
+
+.presentation h2 {
+  font-size: 55px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.breve-descripcion {
+  max-width: 700px;
+  margin: 25px auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.presentation a {
+  text-decoration: none;
+  margin-top: 25px;
+  padding: 20px 25px;
+  border: 3px solid #fff;
+  border-radius: 50px;
+  color: #fff;
+  font-weight: bold;
+  transform: 0.5s;
+}
+
+.presentation a:hover {
+  background-color: #6C757D;
+}
