@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
   <title>Jampi Bryan</title>
   <link rel="stylesheet" href="style.css" />
@@ -76,10 +77,10 @@
 
   <!-- SECCIÓN ABOUT ME -->
   <section id="aboutme">
-    <div class="container-perfil">
+    <div class="container-perfil animate__animated animate__fadeIn">
       <img src="img/anonymus.jpeg" alt="" />
     </div>
-    <div class="container-aboutme">
+    <div class="container-aboutme animate__animated animate__fadeIn">
       <p id="title-section">About me</p>
       <h2>Hola, soy Jampi Bryan</h2>
       <h3>DESARROLLADOR WEB</h3>
@@ -212,77 +213,51 @@
   <section id="portfolio">
     <h3 class="title-portfolio">PROJECTS</h3>
     <div class="container-projects">
-      <div class="project">
-        <img src="img/landing-page-lorem.jpg" alt="" />
+
+      <div class="project animate__animated animate__fadeIn">
+        <iframe src="https://jampibryan.github.io/h2olife/"></iframe>
         <div class="info">
-          <h4>Descripcion del proyecto</h4>
-          <p>Diseño web</p>
+          <h4>Descripción del proyecto:</h4>
+          <p>Frontend web desarrollado con HTML, CSS y JavaScript</p>
         </div>
       </div>
 
-      <div class="project">
-        <img src="img/landing-page-lorem.jpg" alt="" />
-        <div class="info">
-          <h4>Descripcion del proyecto</h4>
-          <p>Diseño web</p>
-        </div>
+      <div class="project description-project animate__animated animate__fadeIn">
+        <a href="https://jampibryan.github.io/h2olife/" target="_blank">
+          <h2>H2O LIFE</h2>
+        </a>
+        <h3>Tecnologías utilizadas:</h3>
+        <ul class="animate__animated animate__fadeInRight">
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+          <li>Flexbox</li>
+          <li>Grid</li>
+          <li>Mediaqueries</li>
+          <li>Font Awesome</li>
+          <li>Animated.css</li>
+        </ul>
+        <h3>Aprendizajes:</h3>
+        <ul class="aprendizaje">
+          <li><i class="fa-solid fa-check"></i> Cómo crear una página web responsiva.</li>
+          <li><i class="fa-solid fa-check"></i> Cómo utilizar animaciones e iconos para crear una experiencia visual
+            atractiva.</li>
+          <li><i class="fa-solid fa-check"></i> Cómo utilizar sliders y keyframes para crear animaciones suaves y
+            fluidas.</li>
+          <li><i class="fa-solid fa-check"></i> Cómo utilizar flexbox y grid para organizar el contenido de la página
+            web de forma flexible.</li>
+          <li><i class="fa-solid fa-check"></i> Cómo utilizar mediaqueries para adaptar la página web a diferentes
+            tamaños de pantalla.</li>
+        </ul>
       </div>
-      <div class="project">
-        <img src="img/landing-page-lorem.jpg" alt="" />
-        <div class="info">
-          <h4>Descripcion del proyecto</h4>
-          <p>Diseño web</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="img/landing-page-lorem.jpg" alt="" />
-        <div class="info">
-          <h4>Descripcion del proyecto</h4>
-          <p>Diseño web</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="img/landing-page-lorem.jpg" alt="" />
-        <div class="info">
-          <h4>Descripcion del proyecto</h4>
-          <p>Diseño web</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="img/landing-page-lorem.jpg" alt="" />
-        <div class="info">
-          <h4>Descripcion del proyecto</h4>
-          <p>Diseño web</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="img/landing-page-lorem.jpg" alt="" />
-        <div class="info">
-          <h4>Descripcion del proyecto</h4>
-          <p>Diseño web</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="img/landing-page-lorem.jpg" alt="" />
-        <div class="info">
-          <h4>Descripcion del proyecto</h4>
-          <p>Diseño web</p>
-        </div>
-      </div>
-      <div class="project">
-        <img src="img/landing-page-lorem.jpg" alt="" />
-        <div class="info">
-          <h4>Descripcion del proyecto</h4>
-          <p>Diseño web</p>
-        </div>
-      </div>
-    </div>
+
   </section>
+
 
   <!-- SECCIÓN CONTACT -->
   <div class="fondo-contact">
     <div class="container-contact" id="contact">
-      <div class="container-datos">
+      <div class="container-datos animate__animated animate__fadeInLeft">
         <h3 class="title-contact">Datos de contacto</h3>
         <ul>
           <li>
@@ -294,7 +269,7 @@
         </ul>
       </div>
 
-      <form class="container-form" action="">
+      <form class="container-form animate__animated animate__fadeInRight" action="">
         <p>
           <label for="name">Name</label>
           <input type="text" name="name" id="name" required />
@@ -317,7 +292,7 @@
   <!-- SECCIÓN FOOTER -->
   <footer>
     <p>&copy; 2023 Jampi Bryan. Todos los derechos reservados.</p>
-    <div class="redes">
+    <div class="redes animate__animated animate__fadeInUp">
       <a href="https://github.com/jampibryan" target="_blank"><i class="fa-brands fa-github"></i></a>
       <a href="https://www.linkedin.com/in/bryan-amaya-culqui-69b126203/" target="_blank"><i
           class="fa-brands fa-linkedin-in"></i></a>
