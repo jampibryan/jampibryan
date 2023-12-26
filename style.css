@@ -334,7 +334,7 @@ body {
   }
 
   100% {
-    width: 65%;
+    width: 80%;
   }
 }
 
@@ -364,7 +364,7 @@ body {
   }
 
   100% {
-    width: 60%;
+    width: 75%;
   }
 }
 
@@ -374,7 +374,7 @@ body {
   }
 
   100% {
-    width: 75%;
+    width: 80%;
   }
 }
 
@@ -384,29 +384,10 @@ body {
   }
 
   100% {
-    width: 80%;
+    width: 75%;
   }
 }
 
-@keyframes progreso9 {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 80%;
-  }
-}
-
-@keyframes progreso10 {
-  0% {
-    width: 0;
-  }
-
-  100% {
-    width: 55%;
-  }
-}
 
 /* ----------------------SECCIÓN PORTFOLIO---------------------- */
 
@@ -480,6 +461,10 @@ body {
   color: #0b5ecd;
 }
 
+.description-project .github {
+  font-size: 20px;
+  color: #000;
+}
 
 .description-project h3 {
   padding: 10px 0;
@@ -500,6 +485,10 @@ body {
   color: #fff;
   border-radius: 10px;
   margin: 5px;
+}
+
+.description-project ul:first-of-type li:hover {
+  background-color: #1c73df;
 }
 
 .description-project .aprendizaje li {
@@ -654,11 +643,6 @@ footer a {
     padding: 80px 0;
   }
 
-  .project iframe {
-    /* border: 3px solid #d63031; */
-  }
-
-
   #portfolio .container-projects .project,
   .project iframe {
     max-width: 380px;
@@ -810,7 +794,7 @@ footer a {
   }
 
   /* ----------------------SECCIÓN FOOTER---------------------- */
-  
+
   footer .redes {
     display: block;
   }
