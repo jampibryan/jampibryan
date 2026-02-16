@@ -1,291 +1,199 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio profesional de Jampi Bryan — Desarrollador Full Stack | TI | Data Science & IA">
+  <meta name="author" content="Jampi Bryan">
+  <title>Jampi Bryan — Portfolio</title>
 
-  <title>Jampi Bryan</title>
-  <link rel="stylesheet" href="style.css" />
+  <!-- Fuentes de Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <!-- SECCIÓN INICIO -->
-  <section id="inicio">
+
+  <!-- ====== HEADER ====== -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#" class="nav__logo">
+        <img src="img/Logo.png" alt="Logo Jampi Bryan" class="nav__logo-img">
+      </a>
+
+      <div class="nav__menu" id="nav-menu">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li class="nav__item"><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
+          <li class="nav__item"><a href="#especializacion" class="nav__link">Especialización</a></li>
+          <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
+          <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
+          <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
+          <li class="nav__item"><a href="#certificaciones" class="nav__link">Certificaciones</a></li>
+          <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </div>
+
+      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ====== HERO ====== -->
+    <section class="hero section" id="inicio">
+      <div class="container">
+
+        <!-- Contenido del Hero -->
+        <div class="hero__content">
+          <div class="hero__tag">
+            <span class="tag">Disponible para proyectos</span>
+          </div>
+
+          <h1 class="hero__name hero-animate" data-delay="200">
+            Hola, soy <span class="gradient-text">Jampi Bryan</span>
+          </h1>
+
+          <p class="hero__title hero-animate" data-delay="400">
+            <span id="typing-text"></span><span class="typing-cursor"></span>
+          </p>
+
+          <p class="hero__description hero-animate" data-delay="600">
+            Transformo ideas en soluciones digitales de alto impacto. Apasionado por la tecnología, la innovación y el aprendizaje continuo.
+          </p>
+
+          <div class="hero__buttons hero-animate" data-delay="800">
+            <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
+            <a href="#" class="btn btn--outline" id="btn-cv">Descargar CV</a>
+            <a href="#contacto" class="btn btn--ghost">Contactar</a>
+          </div>
+
+          <!-- Redes sociales -->
+          <div class="hero__socials hero-animate" data-delay="1000">
+            <a href="https://github.com/jampibryan" class="social-link" target="_blank" aria-label="GitHub">
+              <svg class="icon"><use href="assets/icons/icons.svg#icon-github"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/jampibryan" class="social-link" target="_blank" aria-label="LinkedIn">
+              <svg class="icon"><use href="assets/icons/icons.svg#icon-linkedin"/></svg>
+            </a>
+            <a href="https://www.instagram.com/jampibryan" class="social-link" target="_blank" aria-label="Instagram">
+              <svg class="icon"><use href="assets/icons/icons.svg#icon-instagram"/></svg>
+            </a>
+            <a href="https://www.youtube.com/@jampibryan" class="social-link" target="_blank" aria-label="YouTube">
+              <svg class="icon"><use href="assets/icons/icons.svg#icon-youtube"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Imagen del Hero -->
+        <div class="hero__image hero-animate" data-delay="400">
+          <div class="hero__image-wrapper">
+            <img src="img/JampiBryan.jpg" alt="Foto de Jampi Bryan" />
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Indicador de scroll -->
+      <div class="hero__scroll">
+        <div class="hero__scroll-mouse"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ====== SOBRE MÍ ====== -->
+    <section class="about section" id="sobre-mi">
+      <div class="container">
+        <h2 class="section__title">Sobre mí</h2>
+        <!-- Contenido sobre mí -->
+      </div>
+    </section>
+
+    <!-- ====== ESPECIALIZACIÓN ====== -->
+    <section class="specializations section" id="especializacion">
+      <div class="container">
+        <h2 class="section__title">Especialización</h2>
+        <!-- Contenido especialización -->
+      </div>
+    </section>
+
+    <!-- ====== HABILIDADES ====== -->
+    <section class="skills section" id="habilidades">
+      <div class="container">
+        <h2 class="section__title">Habilidades</h2>
+        <!-- Contenido habilidades -->
+      </div>
+    </section>
+
+    <!-- ====== EXPERIENCIA ====== -->
+    <section class="experience section" id="experiencia">
+      <div class="container">
+        <h2 class="section__title">Experiencia</h2>
+        <!-- Contenido experiencia -->
+      </div>
+    </section>
+
+    <!-- ====== PROYECTOS ====== -->
+    <section class="projects section" id="proyectos">
+      <div class="container">
+        <h2 class="section__title">Proyectos</h2>
+        <!-- Contenido proyectos -->
+      </div>
+    </section>
+
+    <!-- ====== CERTIFICACIONES ====== -->
+    <section class="certifications section" id="certificaciones">
+      <div class="container">
+        <h2 class="section__title">Certificaciones</h2>
+        <!-- Contenido certificaciones -->
+      </div>
+    </section>
+
+    <!-- ====== CONTACTO ====== -->
+    <section class="contact section" id="contacto">
+      <div class="container">
+        <h2 class="section__title">Contacto</h2>
+        <!-- Contenido contacto -->
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ====== PIE DE PÁGINA ====== -->
+  <footer class="footer" id="footer">
     <div class="container">
-      <header>
-        <div class="container-header">
-          <div class="logo-container">
-            <img src="img/Logo-Blanco.png" alt="Logo Jampi Bryan" />
-          </div>
-
-          <nav id="nav">
-            <ul id="links" class="nav-ul">
-              <li>
-                <a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a>
-              </li>
-              <li>
-                <a href="#aboutme" onclick="seleccionar(this)">ABOUT ME</a>
-              </li>
-              <li>
-                <a href="#skills" onclick="seleccionar(this)">SKILLS</a>
-              </li>
-              <li>
-                <a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a>
-              </li>
-              <li>
-                <a href="#contact" onclick="seleccionar(this)">CONTACT</a>
-              </li>
-            </ul>
-          </nav>
-
-          <!-- ICONO PARA EL MENÚ RESPONSIVO -->
-          <div id="icono-nav" onclick="responsiveMenu()">
-            <i class="fa-solid fa-bars"></i>
-          </div>
-
-          <!-- ICONOS PARA LAS REDES SOCIALES -->
-          <div class="redes">
-            <a href="https://github.com/jampibryan" target="_blank"><i class="fa-brands fa-github"></i></a>
-            <a href="https://www.linkedin.com/in/bryan-amaya-culqui-69b126203/" target="_blank"><i
-                class="fa-brands fa-linkedin-in"></i></a>
-            <a href="https://www.instagram.com/jampibryan/" target="_blank">
-              <i class="fa-brands fa-instagram"></i></a>
-            <a href="https://www.youtube.com/@learningwithjampibryan786" target="_blank"><i
-                class="fa-brands fa-youtube"></i></a>
-          </div>
-        </div>
-      </header>
-
-      <div class="presentation">
-        <p class="bienvenida">YOU'RE WELCOME</p>
-        <h2>I'm Jampi Bryan</h2>
-        <p class="breve-descripcion">
-          En busca de desafíos creativos para desarrollar aplicaciones web de
-          alto rendimiento.
-        </p>
-
-        <a href="#portfolio">Go to Portfolio</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- SECCIÓN ABOUT ME -->
-  <section id="aboutme">
-    <div class="container-perfil animate__animated animate__fadeIn">
-      <img src="img/Carnet.jpg" alt="" />
-    </div>
-    <div class="container-aboutme animate__animated animate__fadeIn">
-      <p id="title-section">About me</p>
-      <h2>Hola, soy Jampi Bryan</h2>
-      <h3>DESARROLLADOR WEB</h3>
-      <p>
-        Soy un apasionado desarrollador web junior en busca de oportunidades
-        emocionantes para crecer y aprender en la industria. Mi entusiasmo por
-        la programación y la resolución de problemas me impulsa a superar
-        nuevos desafíos y a desarrollar soluciones creativas.
-      </p>
-      <p>
-        Con una base sólida en tecnologías como HTML, CSS y JavaScript, busco
-        expandir mis conocimientos y habilidades en el desarrollo de
-        aplicaciones web modernas y funcionales.
-      </p>
-      <p>
-        Siempre estoy abierto a <b>aprender</b> de los demás y
-        <b>colaborar</b> en proyectos que me brinden la oportunidad de crecer
-        profesionalmente y contribuir de manera significativa.
-      </p>
-      <a href="https://drive.google.com/file/d/1-GO_tDGCqZSePcPpI-EaZkayVxqLZG7e/view?usp=sharing" target="_blank">Descargar CV</a>
-    </div>
-  </section>
-
-  <!-- SECCIÓN SKILLS -->
-  <div class="container-skills" id="skills">
-    <h3>SKILLS</h3>
-
-    <div class="skills">
-      <div class="info">
-        <p><span class="lista"></span>HTML & CSS</p>
-        <span class="porcentaje">85%</span>
-      </div>
-      <div class="barra">
-        <div id="html_css" class="barra-progreso1"></div>
-      </div>
-    </div>
-
-    <div class="skills">
-      <div class="info">
-        <p><span class="lista"></span>JAVASCRIPT</p>
-        <span class="porcentaje">80%</span>
-      </div>
-      <div class="barra">
-        <div id="js" class="barra-progreso2"></div>
-      </div>
-    </div>
-
-    <div class="skills">
-      <div class="info">
-        <p><span class="lista"></span>REACT JS</p>
-        <span class="porcentaje">80%</span>
-      </div>
-      <div class="barra">
-        <div id="react" class="barra-progreso3"></div>
-      </div>
-    </div>
-
-    <div class="skills">
-      <div class="info">
-        <p><span class="lista"></span>BOOTSTRAP & TAILWIND</p>
-        <span class="porcentaje">80%</span>
-      </div>
-      <div class="barra">
-        <div id="bootstrap" class="barra-progreso4"></div>
-      </div>
-    </div>
-
-    <div class="skills">
-      <div class="info">
-        <p><span class="lista"></span>LARAVEL</p>
-        <span class="porcentaje">80%</span>
-      </div>
-      <div class="barra">
-        <div id="laravel" class="barra-progreso5"></div>
-      </div>
-    </div>
-
-    <div class="skills">
-      <div class="info">
-        <p><span class="lista"></span>C#</p>
-        <span class="porcentaje">75%</span>
-      </div>
-      <div class="barra">
-        <div id="c#" class="barra-progreso6"></div>
-      </div>
-    </div>
-
-    <div class="skills">
-      <div class="info">
-        <p><span class="lista"></span>SQL SERVER</p>
-        <span class="porcentaje">80%</span>
-      </div>
-      <div class="barra">
-        <div id="sql_server" class="barra-progreso7"></div>
-      </div>
-    </div>
-
-    <div class="skills">
-      <div class="info">
-        <p><span class="lista"></span>SPRING BOOT</p>
-        <span class="porcentaje">75%</span>
-      </div>
-      <div class="barra">
-        <div id="JAVA" class="barra-progreso8"></div>
-      </div>
-    </div>
-  </div>
-
-  <!-- SECCIÓN PORTFOLIO -->
-  <section id="portfolio">
-    <h3 class="title-portfolio">PROJECTS</h3>
-    <div class="container-projects">
-
-      <div class="project animate__animated animate__fadeIn">
-        <iframe src="https://jampibryan.github.io/h2olife/"></iframe>
-        <div class="info">
-          <h4>Descripción del proyecto:</h4>
-          <p>Frontend web desarrollado con HTML, CSS y JavaScript</p>
-        </div>
-      </div>
-
-      <div class="project description-project animate__animated animate__fadeIn">
-        <a href="https://jampibryan.github.io/h2olife/" target="_blank">
-          <h2>H2O LIFE</h2>
+      <div class="footer__socials">
+        <a href="https://github.com/jampibryan" class="social-link" target="_blank" aria-label="GitHub">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-github"/></svg>
         </a>
-        <a class="github" href="https://github.com/jampibryan/h2olife" target="_blank"><i class="fa-brands fa-github"></i></a>
-        
-        <h3>Tecnologías utilizadas:</h3>
-        <ul class="animate__animated animate__fadeInRight">
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JavaScript</li>
-          <li>Flexbox</li>
-          <li>Grid</li>
-          <li>Mediaqueries</li>
-          <li>Font Awesome</li>
-          <li>Animated.css</li>
-        </ul>
-        <h3>Aprendizajes:</h3>
-        <ul class="aprendizaje">
-          <li><i class="fa-solid fa-check"></i> Cómo crear una página web responsiva.</li>
-          <li><i class="fa-solid fa-check"></i> Cómo utilizar animaciones e iconos para crear una experiencia visual
-            atractiva.</li>
-          <li><i class="fa-solid fa-check"></i> Cómo utilizar sliders y keyframes para crear animaciones suaves y
-            fluidas.</li>
-          <li><i class="fa-solid fa-check"></i> Cómo utilizar flexbox y grid para organizar el contenido de la página
-            web de forma flexible.</li>
-          <li><i class="fa-solid fa-check"></i> Cómo utilizar mediaqueries para adaptar la página web a diferentes
-            tamaños de pantalla.</li>
-        </ul>
+        <a href="https://www.linkedin.com/in/jampibryan/" class="social-link" target="_blank" aria-label="LinkedIn">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-linkedin"/></svg>
+        </a>
+        <a href="https://www.instagram.com/jampibryan/" class="social-link" target="_blank" aria-label="Instagram">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-instagram"/></svg>
+        </a>
+        <a href="https://www.youtube.com/@jampibryan" class="social-link" target="_blank" aria-label="YouTube">
+          <svg class="icon"><use href="assets/icons/icons.svg#icon-youtube"/></svg>
+        </a>
       </div>
-
-  </section>
-
-
-  <!-- SECCIÓN CONTACT -->
-  <div class="fondo-contact">
-    <div class="container-contact" id="contact">
-      <div class="container-datos animate__animated animate__fadeInLeft">
-        <h3 class="title-contact">Datos de contacto</h3>
-        <ul>
-          <li>
-            <i class="fa-solid fa-location-dot"></i>Pacasmayo - La Libertad -
-            Peru
-          </li>
-          <li><i class="fa-solid fa-phone"></i>+51 935172287</li>
-          <li><i class="fa-solid fa-envelope"></i>jampibryan@gmail.com</li>
-        </ul>
-      </div>
-
-      <form class="container-form animate__animated animate__fadeInRight" action="">
-        <p>
-          <label for="name">Name</label>
-          <input type="text" name="name" id="name" required />
-        </p>
-        <p>
-          <label for="email">Email</label>
-          <input type="text" name="email" id="email" required />
-        </p>
-        <p>
-          <label for="mensaje">Message</label>
-          <textarea name="mensaje" id="mensaje" rows="2" required></textarea>
-        </p>
-        <p>
-          <button type="submit">Send</button>
-        </p>
-      </form>
-    </div>
-  </div>
-
-  <!-- SECCIÓN FOOTER -->
-  <footer>
-    <p>&copy; 2023 Jampi Bryan. Todos los derechos reservados.</p>
-    <div class="redes animate__animated animate__fadeInUp">
-      <a href="https://github.com/jampibryan" target="_blank"><i class="fa-brands fa-github"></i></a>
-      <a href="https://www.linkedin.com/in/bryan-amaya-culqui-69b126203/" target="_blank"><i
-          class="fa-brands fa-linkedin-in"></i></a>
-      <a href="https://www.instagram.com/jampibryan/" target="_blank">
-        <i class="fa-brands fa-instagram"></i></a>
-      <a href="https://www.youtube.com/@learningwithjampibryan786" target="_blank"><i
-          class="fa-brands fa-youtube"></i></a>
+      <p class="footer__copy">&copy; 2026 Jampi Bryan. Todos los derechos reservados.</p>
     </div>
   </footer>
 
-  <script src="script.js"></script>
-</body>
+  <!-- JS -->
+  <script src="js/menu.js"></script>
+  <script src="js/animations.js"></script>
+  <script src="js/main.js"></script>
 
+</body>
 </html>

@@ -1,0 +1,173 @@
+/* ============================================
+   ANIMATIONS.CSS — Animaciones y transiciones
+   ============================================ */
+
+/* ----- Fade In ----- */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* ----- Fade In Up ----- */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----- Fade In Down ----- */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----- Slide In Left ----- */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ----- Slide In Right ----- */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* ----- Scale In ----- */
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ----- Parpadeo (cursor) ----- */
+@keyframes blink {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ----- Rueda de scroll ----- */
+@keyframes scrollWheel {
+  0% {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateX(-50%) translateY(12px);
+  }
+}
+
+/* ----- Rebote de scroll ----- */
+@keyframes scrollBounce {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
+}
+
+/* ----- Aparición escalonada del Hero ----- */
+@keyframes heroFadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ----- Pulso de brillo ----- */
+@keyframes glowPulse {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(37, 99, 235, 0.3);
+  }
+  50% {
+    box-shadow: 0 0 40px rgba(37, 99, 235, 0.5), 0 0 60px rgba(139, 92, 246, 0.2);
+  }
+}
+
+/* =============================================
+   Clases de animación (para usar con JS)
+   ============================================= */
+.animate {
+  opacity: 0;
+}
+
+.animate--fade-in {
+  animation: fadeIn var(--transition-slow) forwards;
+}
+
+.animate--fade-in-up {
+  animation: fadeInUp var(--transition-slow) forwards;
+}
+
+.animate--fade-in-down {
+  animation: fadeInDown var(--transition-slow) forwards;
+}
+
+.animate--slide-in-left {
+  animation: slideInLeft var(--transition-slow) forwards;
+}
+
+.animate--slide-in-right {
+  animation: slideInRight var(--transition-slow) forwards;
+}
+
+.animate--scale-in {
+  animation: scaleIn var(--transition-slow) forwards;
+}
+
+/* ----- Animaciones de entrada del Hero ----- */
+.hero-animate {
+  opacity: 0;
+  transform: translateY(40px);
+}
+
+.hero-animate--visible {
+  animation: heroFadeInUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* ----- Glow pulse para foto ----- */
+.hero__image-wrapper--loaded {
+  animation: glowPulse 4s ease-in-out infinite;
+}
