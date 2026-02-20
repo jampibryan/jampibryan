@@ -10,4 +10,5 @@ document.addEventListener('DOMContentLoaded', () => {
   if (typeof initHeroAnimations === 'function') initHeroAnimations();
   if (typeof initTypingEffect === 'function') initTypingEffect();
   if (typeof initScrollAnimations === 'function') initScrollAnimations();
+  if (typeof initContactForm === 'function') initContactForm();
 });

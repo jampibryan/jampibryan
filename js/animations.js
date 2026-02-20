@@ -104,3 +104,26 @@ function initScrollAnimations() {
 
   elements.forEach((el) => observer.observe(el));
 }
+
+/**
+ * Formulario de contacto — validación y envío
+ */
+function initContactForm() {
+  const form = document.getElementById('contacto-form');
+  if (!form) return;
+
+  form.addEventListener('submit', function (e) {
+    const btn = form.querySelector('.contacto__btn');
+    btn.textContent = 'Enviando...';
+    btn.disabled = true;
+
+    // Si usa Formspree, deja el comportamiento por defecto
+    // Si no tiene action configurado, previene el envío
+    if (form.action.includes('TU_ID')) {
+      e.preventDefault();
+      btn.textContent = 'Configura Formspree';
+      btn.disabled = false;
+      return;
+    }
+  });
+}

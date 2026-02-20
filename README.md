@@ -1,90 +1,68 @@
-# Jampi Bryan — Portfolio
+# Hey! Soy Jampi Bryan 👋
 
-Portfolio profesional desarrollado con HTML5, CSS3 y JavaScript ES6+.  
-Tema oscuro con diseño moderno, responsivo y sin dependencias externas.
+### Desarrollador Full Stack | TI | Data Science & IA
 
----
+Soy un profesional de Tecnologías de la Información con experiencia en desarrollo web, soporte técnico y análisis de datos. Me apasiona crear soluciones digitales, automatizar procesos y aprender constantemente.
 
-## Vista previa
-
-> Desarrollador Full Stack | Tecnologías de la Información | Data Science & IA
-
----
-
-## Tecnologías
-
-| Tecnología | Uso |
-|---|---|
-| HTML5 | Estructura semántica |
-| CSS3 | Custom Properties, Flexbox, Grid, animaciones |
-| JavaScript ES6+ | IntersectionObserver, efecto typing, menú móvil |
-| Google Fonts | Inter, Poppins, Fira Code |
-| SVG Sprite | Iconos de redes sociales |
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/jampibryan)
+[![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jampibryan)
+[![Instagram](https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white)](https://www.instagram.com/jampibryan)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@jampibryan)
 
 ---
 
-## Estructura del proyecto
+## 💻 Lo que hago
 
-```
-jampibryan/
-├── index.html              # Página principal
-├── css/
-│   ├── variables.css       # Tokens de diseño (colores, tipografía, espaciado)
-│   ├── styles.css          # Estilos de componentes y layout
-│   └── animations.css      # Keyframes y clases de animación
-├── js/
-│   ├── main.js             # Punto de entrada, inicializa módulos
-│   ├── animations.js       # Hero, typing effect, scroll animations
-│   └── menu.js             # Menú móvil y header con scroll
-├── img/                    # Imágenes (logo, foto de perfil)
-├── assets/
-│   └── icons/icons.svg     # Sprite SVG con iconos sociales
-└── projects/               # Páginas de proyectos individuales
-```
+- **Full Stack Development** — Aplicaciones web completas con React, C#, Spring Boot y Laravel
+- **Soporte TI** — Administración de redes, infraestructura y soporte técnico corporativo
+- **Data Science & IA** — Análisis de datos, visualización con Power BI y Machine Learning con Python
+- **Automatización** — Scripts, APIs, integración de sistemas y optimización de flujos de trabajo
 
 ---
 
-## Secciones
+## 🛠️ Tecnologías y herramientas
 
-| # | Sección | Descripción |
-|---|---|---|
-| 1 | **Inicio (Hero)** | Presentación con foto, efecto typing y botones de acción |
-| 2 | **Sobre mí** | Información personal y profesional |
-| 3 | **Especialización** | Áreas de enfoque y servicios |
-| 4 | **Habilidades** | Stack tecnológico y herramientas |
-| 5 | **Experiencia** | Trayectoria profesional |
-| 6 | **Proyectos** | Portafolio de trabajos realizados |
-| 7 | **Certificaciones** | Cursos y certificados obtenidos |
-| 8 | **Contacto** | Formulario y datos de contacto |
-
----
-
-## Características
-
-- Tema oscuro con gradientes (azul / violeta / cian)
-- Diseño 100% responsivo (mobile-first)
-- Animaciones al hacer scroll con IntersectionObserver
-- Efecto de escritura automática en el Hero
-- Header con efecto glassmorphism al hacer scroll
-- Menú hamburguesa para dispositivos móviles
-- Iconos SVG sprite (sin Font Awesome ni librerías externas)
-- Código modular y comentado en español
+<p>
+  <img src="https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black" />
+  <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/C%23-239120?style=flat-square&logo=csharp&logoColor=white" />
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=flat-square&logo=springboot&logoColor=white" />
+  <img src="https://img.shields.io/badge/Laravel-FF2D20?style=flat-square&logo=laravel&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black" />
+  <img src="https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/SAP-0FAAFF?style=flat-square&logo=sap&logoColor=white" />
+  <img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" />
+</p>
 
 ---
 
-## Instalación
+## 📊 GitHub Stats
 
-1. Clona el repositorio:
-   ```bash
-   git clone https://github.com/jampibryan/jampibryan.git
-   ```
-2. Abre `index.html` en un servidor local (XAMPP, Live Server, etc.)
-
-> **Nota:** Los iconos SVG sprite requieren un servidor HTTP para cargar correctamente.
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=jampibryan&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0a0a0f&title_color=3b82f6&icon_color=8b5cf6&text_color=a1a1aa" width="48%" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=jampibryan&layout=compact&theme=tokyonight&hide_border=true&bg_color=0a0a0f&title_color=3b82f6&text_color=a1a1aa" width="40%" />
+</p>
 
 ---
 
-## Autor
+## 🚀 Experiencia
 
-**Jampi Bryan**  
-[GitHub](https://github.com/jampibryan) · [LinkedIn](https://www.linkedin.com/in/jampibryan) · [Instagram](https://www.instagram.com/jampibryan) · [YouTube](https://www.youtube.com/@jampibryan)
+- **Asistente de TI** — AG Chavín *(2026)*
+- **Asistente de Gestión de Datos y Sistemas** — Programa JUNTOS, MIDIS *(2025)*
+- **Técnico en Soporte de Hardware y Redes** — CETPRO Computronic *(2025)*
+- **Auxiliar de TI** — Municipalidad C.P. Talambo *(2024)*
+
+---
+
+## 📜 Certificaciones
+
+`Inglés — CIDUNT (2025)` · `SSOMA — Colegio de Ingenieros del Perú (2024)` · `SAP MM` · `SAP FI` · `Excel` · `Power BI` · `MS Project` · `Ofimática` · `Inglés — ACIST Perú`
+
+---
+
+<p align="center">
+  Hecho con 💙 por <strong>Jampi Bryan</strong>
+</p>

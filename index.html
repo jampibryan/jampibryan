@@ -1,199 +1,717 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio profesional de Jampi Bryan — Desarrollador Full Stack | TI | Data Science & IA">
-  <meta name="author" content="Jampi Bryan">
-  <title>Jampi Bryan — Portfolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfolio profesional de Jampi Bryan — Desarrollador Full Stack | TI | Data Science & IA"
+    />
+    <meta name="author" content="Jampi Bryan" />
+    <title>Jampi Bryan — Portfolio</title>
 
-  <!-- Fuentes de Google -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="css/variables.css">
-  <link rel="stylesheet" href="css/animations.css">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
 
-<body>
+  <body>
+    <!-- ====== HEADER ====== -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">
+          <img
+            src="img/Logo.png"
+            alt="Logo Jampi Bryan"
+            class="nav__logo-img"
+          />
+        </a>
 
-  <!-- ====== HEADER ====== -->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="#" class="nav__logo">
-        <img src="img/Logo.png" alt="Logo Jampi Bryan" class="nav__logo-img">
-      </a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#inicio" class="nav__link">Inicio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#sobre-mi" class="nav__link">Sobre mí</a>
+            </li>
+            <li class="nav__item">
+              <a href="#competencias" class="nav__link">Competencias</a>
+            </li>
+            <li class="nav__item">
+              <a href="#habilidades" class="nav__link">Habilidades</a>
+            </li>
+            <li class="nav__item">
+              <a href="#experiencia" class="nav__link">Experiencia</a>
+            </li>
+            <!--
+            <li class="nav__item">
+              <a href="#proyectos" class="nav__link">Proyectos</a>
+            </li>
+            -->
+            <li class="nav__item">
+              <a href="#certificaciones" class="nav__link">Certificaciones</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contacto" class="nav__link">Contacto</a>
+            </li>
+          </ul>
+        </div>
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item"><a href="#inicio" class="nav__link">Inicio</a></li>
-          <li class="nav__item"><a href="#sobre-mi" class="nav__link">Sobre mí</a></li>
-          <li class="nav__item"><a href="#especializacion" class="nav__link">Especialización</a></li>
-          <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
-          <li class="nav__item"><a href="#experiencia" class="nav__link">Experiencia</a></li>
-          <li class="nav__item"><a href="#proyectos" class="nav__link">Proyectos</a></li>
-          <li class="nav__item"><a href="#certificaciones" class="nav__link">Certificaciones</a></li>
-          <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
-        </ul>
-      </div>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </nav>
+    </header>
 
-      <button class="nav__toggle" id="nav-toggle" aria-label="Abrir menú">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </nav>
-  </header>
+    <main>
+      <!-- ====== HERO ====== -->
+      <section class="hero section" id="inicio">
+        <div class="container">
+          <!-- Contenido del Hero -->
+          <div class="hero__content">
+            <div class="hero__tag">
+              <span class="tag">Disponible para proyectos</span>
+            </div>
 
-  <main>
+            <h1 class="hero__name hero-animate" data-delay="200">
+              Hola, soy <span class="gradient-text">Jampi Bryan</span>
+            </h1>
 
-    <!-- ====== HERO ====== -->
-    <section class="hero section" id="inicio">
-      <div class="container">
+            <p class="hero__title hero-animate" data-delay="400">
+              <span id="typing-text"></span><span class="typing-cursor"></span>
+            </p>
 
-        <!-- Contenido del Hero -->
-        <div class="hero__content">
-          <div class="hero__tag">
-            <span class="tag">Disponible para proyectos</span>
+            <p class="hero__description hero-animate" data-delay="600">
+              Transformo ideas en soluciones digitales de alto impacto.
+              Apasionado por la tecnología, la innovación y el aprendizaje
+              continuo.
+            </p>
+
+            <div class="hero__buttons hero-animate" data-delay="800">
+              <!-- <a href="#proyectos" class="btn btn--primary">Ver proyectos</a> -->
+              <a href="#" class="btn btn--primary" id="btn-cv">Descargar CV</a>
+              <a href="#contacto" class="btn btn--outline">Contactar</a>
+            </div>
+
+            <!-- Redes sociales -->
+            <div class="hero__socials hero-animate" data-delay="1000">
+              <a
+                href="https://github.com/jampibryan"
+                class="social-link"
+                target="_blank"
+                aria-label="GitHub"
+              >
+                <svg class="icon">
+                  <use href="assets/icons/icons.svg#icon-github" />
+                </svg>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/jampibryan"
+                class="social-link"
+                target="_blank"
+                aria-label="LinkedIn"
+              >
+                <svg class="icon">
+                  <use href="assets/icons/icons.svg#icon-linkedin" />
+                </svg>
+              </a>
+              <a
+                href="https://www.instagram.com/jampibryan"
+                class="social-link"
+                target="_blank"
+                aria-label="Instagram"
+              >
+                <svg class="icon">
+                  <use href="assets/icons/icons.svg#icon-instagram" />
+                </svg>
+              </a>
+              <a
+                href="https://www.youtube.com/@jampibryan"
+                class="social-link"
+                target="_blank"
+                aria-label="YouTube"
+              >
+                <svg class="icon">
+                  <use href="assets/icons/icons.svg#icon-youtube" />
+                </svg>
+              </a>
+            </div>
           </div>
 
-          <h1 class="hero__name hero-animate" data-delay="200">
-            Hola, soy <span class="gradient-text">Jampi Bryan</span>
-          </h1>
-
-          <p class="hero__title hero-animate" data-delay="400">
-            <span id="typing-text"></span><span class="typing-cursor"></span>
-          </p>
-
-          <p class="hero__description hero-animate" data-delay="600">
-            Transformo ideas en soluciones digitales de alto impacto. Apasionado por la tecnología, la innovación y el aprendizaje continuo.
-          </p>
-
-          <div class="hero__buttons hero-animate" data-delay="800">
-            <a href="#proyectos" class="btn btn--primary">Ver proyectos</a>
-            <a href="#" class="btn btn--outline" id="btn-cv">Descargar CV</a>
-            <a href="#contacto" class="btn btn--ghost">Contactar</a>
-          </div>
-
-          <!-- Redes sociales -->
-          <div class="hero__socials hero-animate" data-delay="1000">
-            <a href="https://github.com/jampibryan" class="social-link" target="_blank" aria-label="GitHub">
-              <svg class="icon"><use href="assets/icons/icons.svg#icon-github"/></svg>
-            </a>
-            <a href="https://www.linkedin.com/in/jampibryan" class="social-link" target="_blank" aria-label="LinkedIn">
-              <svg class="icon"><use href="assets/icons/icons.svg#icon-linkedin"/></svg>
-            </a>
-            <a href="https://www.instagram.com/jampibryan" class="social-link" target="_blank" aria-label="Instagram">
-              <svg class="icon"><use href="assets/icons/icons.svg#icon-instagram"/></svg>
-            </a>
-            <a href="https://www.youtube.com/@jampibryan" class="social-link" target="_blank" aria-label="YouTube">
-              <svg class="icon"><use href="assets/icons/icons.svg#icon-youtube"/></svg>
-            </a>
+          <!-- Imagen del Hero -->
+          <div class="hero__image hero-animate" data-delay="400">
+            <div class="hero__image-wrapper">
+              <img src="img/JampiBryan.jpg" alt="Foto de Jampi Bryan" />
+            </div>
           </div>
         </div>
 
-        <!-- Imagen del Hero -->
-        <div class="hero__image hero-animate" data-delay="400">
-          <div class="hero__image-wrapper">
-            <img src="img/JampiBryan.jpg" alt="Foto de Jampi Bryan" />
+        <!-- Indicador de scroll -->
+        <div class="hero__scroll">
+          <div class="hero__scroll-mouse"></div>
+          <span>Scroll</span>
+        </div>
+      </section>
+
+      <!-- ====== SOBRE MÍ ====== -->
+      <section class="sobre-mi section" id="sobre-mi">
+        <div class="container">
+          <h2 class="section__title animate">Sobre mí</h2>
+          <div class="divider animate"></div>
+          <p class="section__subtitle animate">Conóceme un poco más</p>
+
+          <div class="sobre-mi__grid">
+            <div class="sobre-mi__texto animate">
+              <p>
+                Soy un profesional de
+                <strong>Tecnologías de la Información</strong> con experiencia
+                en desarrollo Full Stack, soporte técnico y análisis de datos.
+                Me interesa aprender constantemente y aplicar la tecnología para
+                mejorar procesos y resolver problemas reales de manera práctica.
+              </p>
+              <p>
+                He trabajado en instituciones públicas y privadas, donde he
+                desarrollado sistemas web, automatizado procesos y brindado
+                soporte técnico a nivel corporativo.
+              </p>
+              <p>
+                Mi enfoque combina la creatividad con el pensamiento analítico
+                para
+                <strong
+                  >resolver problemas complejos de manera eficiente y
+                  escalable.</strong
+                >
+              </p>
+            </div>
+
+            <div class="sobre-mi__datos animate">
+              <div class="sobre-mi__dato">
+                <span class="sobre-mi__dato-numero">2+</span>
+                <span class="sobre-mi__dato-label">Años de experiencia</span>
+              </div>
+              <div class="sobre-mi__dato">
+                <span class="sobre-mi__dato-numero">5+</span>
+                <span class="sobre-mi__dato-label">Proyectos completados</span>
+              </div>
+              <div class="sobre-mi__dato">
+                <span class="sobre-mi__dato-numero">10+</span>
+                <span class="sobre-mi__dato-label">Certificaciones</span>
+              </div>
+              <div class="sobre-mi__dato">
+                <span class="sobre-mi__dato-numero">2</span>
+                <span class="sobre-mi__dato-label"
+                  >Áreas de especialización</span
+                >
+              </div>
+            </div>
           </div>
         </div>
+      </section>
 
-      </div>
+      <!-- ====== COMPETENCIAS ====== -->
+      <section class="especializacion section" id="competencias">
+        <div class="container">
+          <h2 class="section__title animate">Competencias</h2>
+          <div class="divider animate"></div>
+          <p class="section__subtitle animate">
+            Tecnologías y disciplinas en las que enfoco mi desarrollo
+            profesional.
+          </p>
 
-      <!-- Indicador de scroll -->
-      <div class="hero__scroll">
-        <div class="hero__scroll-mouse"></div>
-        <span>Scroll</span>
-      </div>
-    </section>
+          <div class="grid grid--2">
+            <!-- Full Stack -->
+            <div class="card especializacion__card animate">
+              <div class="especializacion__icono">💻</div>
+              <h3 class="especializacion__titulo">Full Stack Development</h3>
+              <p class="especializacion__descripcion">
+                Desarrollo de aplicaciones web completas, desde el frontend con
+                React y JavaScript hasta el backend con C#, Spring Boot y
+                Laravel.
+              </p>
+              <div class="especializacion__tags">
+                <span class="tag">React</span>
+                <span class="tag">C#</span>
+                <span class="tag">Spring Boot</span>
+                <span class="tag">Laravel</span>
+              </div>
+            </div>
 
-    <!-- ====== SOBRE MÍ ====== -->
-    <section class="about section" id="sobre-mi">
+            <!-- Soporte TI -->
+            <div class="card especializacion__card animate">
+              <div class="especializacion__icono">🖥️</div>
+              <h3 class="especializacion__titulo">Soporte TI</h3>
+              <p class="especializacion__descripcion">
+                Soporte técnico a nivel corporativo, administración de redes,
+                mantenimiento de equipos y gestión de infraestructura
+                tecnológica.
+              </p>
+              <div class="especializacion__tags">
+                <span class="tag">Redes</span>
+                <span class="tag">SAP</span>
+                <span class="tag">Active Directory</span>
+                <span class="tag">Help Desk</span>
+              </div>
+            </div>
+
+            <!-- Data Science -->
+            <div class="card especializacion__card animate">
+              <div class="especializacion__icono">📊</div>
+              <h3 class="especializacion__titulo">Data Science & IA</h3>
+              <p class="especializacion__descripcion">
+                Análisis de datos, visualización con Power BI, modelado
+                predictivo con Python y aplicación de técnicas de Machine
+                Learning.
+              </p>
+              <div class="especializacion__tags">
+                <span class="tag">Python</span>
+                <span class="tag">Power BI</span>
+                <span class="tag">SQL</span>
+                <span class="tag">Machine Learning</span>
+              </div>
+            </div>
+
+            <!-- Automatización -->
+            <div class="card especializacion__card animate">
+              <div class="especializacion__icono">⚙️</div>
+              <h3 class="especializacion__titulo">
+                Automatización de Procesos
+              </h3>
+              <p class="especializacion__descripcion">
+                Automatización de tareas repetitivas, integración de sistemas y
+                optimización de flujos de trabajo para mayor productividad.
+              </p>
+              <div class="especializacion__tags">
+                <span class="tag">APIs</span>
+                <span class="tag">Scripts</span>
+                <span class="tag">RPA</span>
+                <span class="tag">CI/CD</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== HABILIDADES BLANDAS ====== -->
+      <section class="habilidades section" id="habilidades">
+        <div class="container">
+          <h2 class="section__title animate">Habilidades Blandas</h2>
+          <div class="divider animate"></div>
+          <p class="section__subtitle animate">
+            Cualidades que me definen como profesional
+          </p>
+
+          <div class="grid grid--2">
+            <div class="card habilidad-blanda__card animate">
+              <h3 class="habilidad-blanda__titulo">💬 Comunicación Efectiva</h3>
+              <p class="habilidad-blanda__descripcion">
+                Capacidad para transmitir ideas y resultados de manera clara y
+                concisa, facilitando la colaboración y el entendimiento mutuo en
+                equipos multidisciplinarios.
+              </p>
+            </div>
+
+            <div class="card habilidad-blanda__card animate">
+              <h3 class="habilidad-blanda__titulo">🤝 Trabajo en Equipo</h3>
+              <p class="habilidad-blanda__descripcion">
+                Habilidad para integrarse y colaborar en equipos diversos,
+                contribuyendo al logro de objetivos comunes y fomentando un
+                ambiente de cooperación.
+              </p>
+            </div>
+
+            <div class="card habilidad-blanda__card animate">
+              <h3 class="habilidad-blanda__titulo">🧠 Pensamiento Crítico</h3>
+              <p class="habilidad-blanda__descripcion">
+                Capacidad para analizar situaciones complejas, identificar
+                problemas y proponer soluciones efectivas basadas en un
+                razonamiento lógico y fundamentado.
+              </p>
+            </div>
+
+            <div class="card habilidad-blanda__card animate">
+              <h3 class="habilidad-blanda__titulo">
+                🛡️ Conciencia de Seguridad
+              </h3>
+              <p class="habilidad-blanda__descripcion">
+                Compromiso con las normativas de seguridad y salud ocupacional,
+                priorizando la prevención de riesgos y promoviendo prácticas
+                laborales seguras.
+              </p>
+            </div>
+
+            <div class="card habilidad-blanda__card animate">
+              <h3 class="habilidad-blanda__titulo">🔄 Adaptabilidad</h3>
+              <p class="habilidad-blanda__descripcion">
+                Flexibilidad para ajustarse a cambios y nuevas tecnologías,
+                manteniendo la eficacia y eficiencia en entornos dinámicos.
+              </p>
+            </div>
+
+            <div class="card habilidad-blanda__card animate">
+              <h3 class="habilidad-blanda__titulo">
+                🔧 Resolución de Problemas
+              </h3>
+              <p class="habilidad-blanda__descripcion">
+                Proactividad para identificar y abordar desafíos operativos,
+                desarrollando soluciones innovadoras que mejoren los procesos y
+                resultados.
+              </p>
+            </div>
+
+            <div class="card habilidad-blanda__card animate">
+              <h3 class="habilidad-blanda__titulo">🚀 Liderazgo</h3>
+              <p class="habilidad-blanda__descripcion">
+                Capacidad para guiar y motivar a equipos de trabajo,
+                orientándolos hacia el logro de metas y el desarrollo
+                profesional continuo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== EXPERIENCIA ====== -->
+      <section class="experiencia section" id="experiencia">
+        <div class="container">
+          <h2 class="section__title animate">Experiencia</h2>
+          <div class="divider animate"></div>
+          <p class="section__subtitle animate">Mi trayectoria profesional</p>
+
+          <div class="timeline">
+            <!-- Experiencia 1 -->
+            <div class="timeline__item animate">
+              <div class="timeline__punto"></div>
+              <div class="timeline__contenido card">
+                <div class="timeline__header">
+                  <h3 class="timeline__cargo">Asistente de TI</h3>
+                  <span class="tag">2026</span>
+                </div>
+                <h4 class="timeline__empresa">AG Chavin</h4>
+                <p class="timeline__descripcion">
+                  💻 Actualmente me desempeño como Asistente de TI en Agrícola y
+                  Ganadera Chavín de Huántar S.A., brindando soporte técnico a
+                  usuarios finales, realizando mantenimiento preventivo y
+                  correctivo de equipos, y apoyando en la operación básica de
+                  redes y herramientas digitales corporativas.
+                </p>
+                <p class="timeline__descripcion">
+                  Asimismo, participo en la gestión de requerimientos
+                  tecnológicos, organización de información, y propuestas de
+                  mejora orientadas a optimizar procesos y asegurar la
+                  continuidad operativa, aplicando buenas prácticas de TI.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">Redes</span>
+                  <span class="tag">Soporte</span>
+                  <span class="tag">Windows Server</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiencia 2 -->
+            <div class="timeline__item animate">
+              <div class="timeline__punto"></div>
+              <div class="timeline__contenido card">
+                <div class="timeline__header">
+                  <h3 class="timeline__cargo">
+                    Asistente de Gestión de Datos y Sistemas
+                  </h3>
+                  <span class="tag">2025</span>
+                </div>
+                <h4 class="timeline__empresa">
+                  Programa Nacional de Apoyo Directo a los Más Pobres - JUNTOS
+                </h4>
+                <p class="timeline__descripcion">
+                  📈 Me desempeñé como Asistente de Gestión de Datos y Sistemas
+                  en el Programa JUNTOS – MIDIS, donde participé activamente en
+                  la administración, validación y análisis de datos del sistema
+                  SITC.
+                </p>
+                <p class="timeline__descripcion">
+                  Esta experiencia me permitió profundizar en la gestión de
+                  información a gran escala y contribuir a procesos sociales con
+                  impacto real, fortaleciendo mis habilidades en el sector
+                  público.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">Docencia</span>
+                  <span class="tag">Ofimática</span>
+                  <span class="tag">Programación</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiencia 3 -->
+            <div class="timeline__item animate">
+              <div class="timeline__punto"></div>
+              <div class="timeline__contenido card">
+                <div class="timeline__header">
+                  <h3 class="timeline__cargo">
+                    Técnico en Soporte de Hardware y Redes
+                  </h3>
+                  <span class="tag">2025</span>
+                </div>
+                <h4 class="timeline__empresa">CETPRO Computronic</h4>
+                <p class="timeline__descripcion">
+                  🚀 Mi paso por Computronic como Técnico en Soporte de Hardware
+                  y Redes fue fundamental para consolidar mis habilidades
+                  técnicas en campo, desde el diagnóstico de equipos hasta la
+                  gestión de redes, siempre con foco en la resolución inmediata
+                  y la satisfacción del usuario.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">Capacitación</span>
+                  <span class="tag">Gestión de datos</span>
+                  <span class="tag">Social</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Experiencia 4 -->
+            <div class="timeline__item animate">
+              <div class="timeline__punto"></div>
+              <div class="timeline__contenido card">
+                <div class="timeline__header">
+                  <h3 class="timeline__cargo">Auxiliar de TI</h3>
+                  <span class="tag">2024</span>
+                </div>
+                <h4 class="timeline__empresa">Municipalidad C.P. Talambo</h4>
+                <p class="timeline__descripcion">
+                  🙏 Agradezco a la Municipalidad de Talambo por la confianza
+                  depositada en mí como Auxiliar de TI. Esta experiencia me
+                  permitió desarrollar soluciones tecnológicas desde cero y
+                  comprender la importancia de la tecnología en la optimización
+                  de procesos administrativos y la seguridad de la información
+                  pública.
+                </p>
+                <div class="timeline__tags">
+                  <span class="tag">Capacitación</span>
+                  <span class="tag">Gestión de datos</span>
+                  <span class="tag">Social</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== PROYECTOS (COMENTADO POR EL MOMENTO) ======
+      <section class="proyectos section" id="proyectos">
+        <div class="container">
+          <h2 class="section__title animate">Proyectos</h2>
+          <div class="divider animate"></div>
+          <p class="section__subtitle animate">Lo que he construido</p>
+          <div class="grid grid--3"></div>
+        </div>
+      </section>
+      ====== FIN PROYECTOS COMENTADO ====== -->
+
+      <!-- ====== CERTIFICACIONES ====== -->
+      <section class="certificaciones section" id="certificaciones">
+        <div class="container">
+          <h2 class="section__title animate">Certificaciones</h2>
+          <div class="divider animate"></div>
+          <p class="section__subtitle animate">Formación continua</p>
+
+          <div class="grid grid--3">
+            <div class="card certificacion__card animate">
+              <div class="certificacion__icono">🗽</div>
+              <h3 class="certificacion__titulo">Inglés</h3>
+              <p class="certificacion__emisor">CIDUNT — Universidad Nacional de Trujillo</p>
+              <span class="tag">2025</span>
+            </div>
+
+            <div class="card certificacion__card animate">
+              <div class="certificacion__icono">🛡️</div>
+              <h3 class="certificacion__titulo">SSOMA en Minería y Construcción</h3>
+              <p class="certificacion__emisor">Colegio de Ingenieros del Perú</p>
+              <span class="tag">2024</span>
+            </div>
+
+            <div class="card certificacion__card animate">
+              <div class="certificacion__icono">📦</div>
+              <h3 class="certificacion__titulo">SAP MM — Logística y Materiales</h3>
+              <p class="certificacion__emisor">Global Tecnologías Academy</p>
+              <span class="tag">2023</span>
+            </div>
+
+            <div class="card certificacion__card animate">
+              <div class="certificacion__icono">💰</div>
+              <h3 class="certificacion__titulo">SAP FI — Finanzas y Contabilidad</h3>
+              <p class="certificacion__emisor">Global Tecnologías Academy</p>
+              <span class="tag">2023</span>
+            </div>
+
+            <div class="card certificacion__card animate">
+              <div class="certificacion__icono">📊</div>
+              <h3 class="certificacion__titulo">Excel</h3>
+              <p class="certificacion__emisor">Global Tecnologías Academy</p>
+              <span class="tag">2023</span>
+            </div>
+
+            <div class="card certificacion__card animate">
+              <div class="certificacion__icono">📈</div>
+              <h3 class="certificacion__titulo">Power BI</h3>
+              <p class="certificacion__emisor">Global Tecnologías Academy</p>
+              <span class="tag">2023</span>
+            </div>
+
+            <div class="card certificacion__card animate">
+              <div class="certificacion__icono">📐</div>
+              <h3 class="certificacion__titulo">MS Project</h3>
+              <p class="certificacion__emisor">Global Tecnologías Academy</p>
+              <span class="tag">2023</span>
+            </div>
+
+            <div class="card certificacion__card animate">
+              <div class="certificacion__icono">💻</div>
+              <h3 class="certificacion__titulo">Ofimática</h3>
+              <p class="certificacion__emisor">ACIST Perú — Centro de Capacitación Informático</p>
+              <span class="tag">2023</span>
+            </div>
+
+            <div class="card certificacion__card animate">
+              <div class="certificacion__icono">📚</div>
+              <h3 class="certificacion__titulo">Inglés</h3>
+              <p class="certificacion__emisor">ACIST Perú — Centro de Capacitación Informático</p>
+              <span class="tag">2023</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ====== CONTACTO ====== -->
+      <section class="contacto section" id="contacto">
+        <div class="container">
+          <h2 class="section__title animate">Contacto</h2>
+          <div class="divider animate"></div>
+
+          <div class="contacto__contenedor">
+            <!-- Formulario -->
+            <form
+              class="contacto__formulario animate"
+              id="contacto-form"
+              action="https://formspree.io/f/TU_ID"
+              method="POST"
+            >
+              <div class="formulario__grupo">
+                <input
+                  type="text"
+                  name="nombre"
+                  id="nombre"
+                  placeholder=" "
+                  required
+                />
+                <label for="nombre">Nombre completo</label>
+              </div>
+              <div class="formulario__grupo">
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder=" "
+                  required
+                />
+                <label for="email">Correo electrónico</label>
+              </div>
+              <div class="formulario__grupo">
+                <input
+                  type="text"
+                  name="asunto"
+                  id="asunto"
+                  placeholder=" "
+                  required
+                />
+                <label for="asunto">Asunto</label>
+              </div>
+              <div class="formulario__grupo">
+                <textarea
+                  name="mensaje"
+                  id="mensaje"
+                  rows="5"
+                  placeholder=" "
+                  required
+                ></textarea>
+                <label for="mensaje">Mensaje</label>
+              </div>
+              <button
+                type="submit"
+                class="btn btn--primary btn--lg contacto__btn"
+              >
+                Enviar mensaje
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ====== PIE DE PÁGINA ====== -->
+    <footer class="footer" id="footer">
       <div class="container">
-        <h2 class="section__title">Sobre mí</h2>
-        <!-- Contenido sobre mí -->
+        <div class="footer__socials">
+          <a
+            href="https://github.com/jampibryan"
+            class="social-link"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <svg class="icon">
+              <use href="assets/icons/icons.svg#icon-github" />
+            </svg>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/jampibryan/"
+            class="social-link"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <svg class="icon">
+              <use href="assets/icons/icons.svg#icon-linkedin" />
+            </svg>
+          </a>
+          <a
+            href="https://www.instagram.com/jampibryan/"
+            class="social-link"
+            target="_blank"
+            aria-label="Instagram"
+          >
+            <svg class="icon">
+              <use href="assets/icons/icons.svg#icon-instagram" />
+            </svg>
+          </a>
+          <a
+            href="https://www.youtube.com/@jampibryan"
+            class="social-link"
+            target="_blank"
+            aria-label="YouTube"
+          >
+            <svg class="icon">
+              <use href="assets/icons/icons.svg#icon-youtube" />
+            </svg>
+          </a>
+        </div>
+        <p class="footer__copy">
+          &copy; 2026 Jampi Bryan. Todos los derechos reservados.
+        </p>
       </div>
-    </section>
+    </footer>
 
-    <!-- ====== ESPECIALIZACIÓN ====== -->
-    <section class="specializations section" id="especializacion">
-      <div class="container">
-        <h2 class="section__title">Especialización</h2>
-        <!-- Contenido especialización -->
-      </div>
-    </section>
-
-    <!-- ====== HABILIDADES ====== -->
-    <section class="skills section" id="habilidades">
-      <div class="container">
-        <h2 class="section__title">Habilidades</h2>
-        <!-- Contenido habilidades -->
-      </div>
-    </section>
-
-    <!-- ====== EXPERIENCIA ====== -->
-    <section class="experience section" id="experiencia">
-      <div class="container">
-        <h2 class="section__title">Experiencia</h2>
-        <!-- Contenido experiencia -->
-      </div>
-    </section>
-
-    <!-- ====== PROYECTOS ====== -->
-    <section class="projects section" id="proyectos">
-      <div class="container">
-        <h2 class="section__title">Proyectos</h2>
-        <!-- Contenido proyectos -->
-      </div>
-    </section>
-
-    <!-- ====== CERTIFICACIONES ====== -->
-    <section class="certifications section" id="certificaciones">
-      <div class="container">
-        <h2 class="section__title">Certificaciones</h2>
-        <!-- Contenido certificaciones -->
-      </div>
-    </section>
-
-    <!-- ====== CONTACTO ====== -->
-    <section class="contact section" id="contacto">
-      <div class="container">
-        <h2 class="section__title">Contacto</h2>
-        <!-- Contenido contacto -->
-      </div>
-    </section>
-
-  </main>
-
-  <!-- ====== PIE DE PÁGINA ====== -->
-  <footer class="footer" id="footer">
-    <div class="container">
-      <div class="footer__socials">
-        <a href="https://github.com/jampibryan" class="social-link" target="_blank" aria-label="GitHub">
-          <svg class="icon"><use href="assets/icons/icons.svg#icon-github"/></svg>
-        </a>
-        <a href="https://www.linkedin.com/in/jampibryan/" class="social-link" target="_blank" aria-label="LinkedIn">
-          <svg class="icon"><use href="assets/icons/icons.svg#icon-linkedin"/></svg>
-        </a>
-        <a href="https://www.instagram.com/jampibryan/" class="social-link" target="_blank" aria-label="Instagram">
-          <svg class="icon"><use href="assets/icons/icons.svg#icon-instagram"/></svg>
-        </a>
-        <a href="https://www.youtube.com/@jampibryan" class="social-link" target="_blank" aria-label="YouTube">
-          <svg class="icon"><use href="assets/icons/icons.svg#icon-youtube"/></svg>
-        </a>
-      </div>
-      <p class="footer__copy">&copy; 2026 Jampi Bryan. Todos los derechos reservados.</p>
-    </div>
-  </footer>
-
-  <!-- JS -->
-  <script src="js/menu.js"></script>
-  <script src="js/animations.js"></script>
-  <script src="js/main.js"></script>
-
-</body>
+    <!-- JS -->
+    <script src="js/menu.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/main.js"></script>
+  </body>
 </html>
