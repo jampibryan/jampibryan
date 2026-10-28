@@ -71,7 +71,7 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-10 w-full sm:w-auto">
             <a
               href={PERSONAL_INFO.cvPath}
-              download="CV-JampiBryan.pdf"
+              download={PERSONAL_INFO.cvFileName}
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white font-semibold text-xs sm:text-sm tracking-wider uppercase shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-200 hover:-translate-y-0.5"
             >
               <Download size={18} />

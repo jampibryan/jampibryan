@@ -68,7 +68,8 @@ export const PERSONAL_INFO = {
     'He trabajado en instituciones públicas y privadas, donde he desarrollado sistemas web, automatizado procesos y brindado soporte técnico a nivel corporativo.',
     'Mi enfoque combina la creatividad con el pensamiento analítico para resolver problemas complejos de manera eficiente y escalable.',
   ],
-  cvPath: '/CV-JampiBryan.pdf',
+  cvPath: '/CV%20-%20JEAMPIERRE%20BRYAN%20AMAYA%20CULQUI.pdf',
+  cvFileName: 'CV - JEAMPIERRE BRYAN AMAYA CULQUI.pdf',
   photoPath: '/img/JampiBryan.jpg',
   logoPath: '/img/Logo.png',
 };

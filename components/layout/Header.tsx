@@ -112,7 +112,7 @@ export function Header() {
         <div className="pt-6">
           <a
             href={PERSONAL_INFO.cvPath}
-            download="CV-JampiBryan.pdf"
+            download={PERSONAL_INFO.cvFileName}
             onClick={() => setIsMobileMenuOpen(false)}
             className="w-full block text-center text-xs uppercase tracking-wider font-semibold px-4 py-3 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 text-white shadow-lg shadow-blue-500/20"
           >
