@@ -23,16 +23,24 @@ export function Competencias() {
               className="p-6 sm:p-8 rounded-2xl bg-[#16161f] border border-white/5 hover:border-blue-500/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-blue-500/5 flex flex-col justify-between"
             >
               <div>
-                <div className="text-3xl sm:text-4xl mb-4">{item.icon}</div>
-                <h3 className="text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">
+                {/* Ícono centrado en mobile, alineado a la izquierda desde sm */}
+                <div className="flex justify-center sm:justify-start text-3xl sm:text-4xl mb-4">
+                  <span>{item.icon}</span>
+                </div>
+
+                {/* Título centrado en mobile, alineado a la izquierda desde sm */}
+                <h3 className="text-center sm:text-left text-lg sm:text-xl font-bold text-white mb-2 sm:mb-3">
                   {item.title}
                 </h3>
-                <p className="text-zinc-400 text-sm leading-relaxed mb-6">
+
+                {/* Descripción centrada en mobile, alineada a la izquierda desde sm */}
+                <p className="text-center sm:text-left text-zinc-400 text-sm leading-relaxed mb-6">
                   {item.description}
                 </p>
               </div>
 
-              <div className="flex flex-wrap gap-2 pt-2 border-t border-white/5">
+              {/* Tags centradas en mobile, alineadas a la izquierda desde sm */}
+              <div className="flex flex-wrap justify-center sm:justify-start gap-2 pt-3 border-t border-white/5">
                 {item.tags.map((tag) => (
                   <Tag key={tag}>{tag}</Tag>
                 ))}
