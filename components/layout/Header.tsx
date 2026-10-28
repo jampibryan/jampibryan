@@ -53,13 +53,6 @@ export function Header() {
               <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-gradient-to-r from-blue-600 to-cyan-400 rounded-full transition-all duration-300 group-hover:w-full" />
             </Link>
           ))}
-          <a
-            href={PERSONAL_INFO.cvPath}
-            download="CV-JampiBryan.pdf"
-            className="text-xs uppercase tracking-wider font-semibold px-4 py-2 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 text-white shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 transition-all duration-200 hover:-translate-y-0.5"
-          >
-            CV
-          </a>
         </nav>
 
         {/* Mobile menu button */}
