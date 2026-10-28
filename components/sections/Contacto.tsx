@@ -62,38 +62,38 @@ export function Contacto() {
   const linkedinUrl = SOCIAL_LINKS.find((s) => s.name === 'LinkedIn')?.url || '#';
 
   return (
-    <section id="contacto" className="py-24 relative bg-[#0d0d14]/60">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="contacto" className="py-20 sm:py-24 relative bg-[#0d0d14]/60">
+      <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <SectionHeader
           title="Contacto"
           subtitle="¿Tienes un proyecto en mente o buscas incorporar talento a tu equipo? Escríbeme y conversemos."
           align="center"
         />
 
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 max-w-5xl mx-auto">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 max-w-5xl mx-auto">
           {/* Quick info column */}
           <AnimatedSection className="lg:col-span-5 space-y-6">
-            <div className="p-8 rounded-2xl bg-[#16161f] border border-white/5 space-y-6">
-              <h3 className="text-xl font-bold text-white mb-2">
+            <div className="p-6 sm:p-8 rounded-2xl bg-[#16161f] border border-white/5 space-y-6">
+              <h3 className="text-lg sm:text-xl font-bold text-white mb-2">
                 Hablemos
               </h3>
-              <p className="text-zinc-400 text-sm leading-relaxed">
+              <p className="text-zinc-400 text-xs sm:text-sm leading-relaxed">
                 Estoy disponible para oportunidades laborales, consultorías y proyectos tecnológicos en desarrollo web, TI y análisis de datos.
               </p>
 
               <div className="space-y-4 pt-4 border-t border-white/5">
                 <div className="flex items-center gap-4 text-zinc-300">
-                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 flex-shrink-0">
                     <MapPin size={20} />
                   </div>
                   <div>
                     <div className="text-xs text-zinc-500 font-medium">Ubicación</div>
-                    <div className="text-sm font-semibold">Perú (Disponible remoto y presencial)</div>
+                    <div className="text-xs sm:text-sm font-semibold">Perú (Disponible remoto y presencial)</div>
                   </div>
                 </div>
 
                 <div className="flex items-center gap-4 text-zinc-300">
-                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 flex-shrink-0">
                     <LinkedinIcon size={20} />
                   </div>
                   <div>
@@ -102,7 +102,7 @@ export function Contacto() {
                       href={linkedinUrl}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-sm font-semibold text-blue-400 hover:underline"
+                      className="text-xs sm:text-sm font-semibold text-blue-400 hover:underline break-all"
                     >
                       /in/jampibryan
                     </a>
@@ -110,12 +110,12 @@ export function Contacto() {
                 </div>
 
                 <div className="flex items-center gap-4 text-zinc-300">
-                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400">
+                  <div className="w-10 h-10 rounded-lg bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 flex-shrink-0">
                     <Mail size={20} />
                   </div>
                   <div>
                     <div className="text-xs text-zinc-500 font-medium">Respuesta</div>
-                    <div className="text-sm font-semibold">En menos de 24 horas</div>
+                    <div className="text-xs sm:text-sm font-semibold">En menos de 24 horas</div>
                   </div>
                 </div>
               </div>
@@ -126,7 +126,7 @@ export function Contacto() {
           <AnimatedSection delay={0.2} className="lg:col-span-7">
             <form
               onSubmit={handleSubmit(onSubmit)}
-              className="p-8 rounded-2xl bg-[#16161f] border border-white/5 space-y-6"
+              className="p-6 sm:p-8 rounded-2xl bg-[#16161f] border border-white/5 space-y-5 sm:space-y-6"
             >
               {/* Nombre */}
               <div>
@@ -141,7 +141,7 @@ export function Contacto() {
                   type="text"
                   placeholder="Tu nombre"
                   {...register('nombre', { required: 'El nombre es obligatorio' })}
-                  className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-blue-500 transition-colors text-sm"
+                  className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-blue-500 transition-colors text-base"
                 />
                 {errors.nombre && (
                   <p className="mt-1 text-xs text-red-400">{errors.nombre.message}</p>
@@ -167,7 +167,7 @@ export function Contacto() {
                       message: 'Correo electrónico no válido',
                     },
                   })}
-                  className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-blue-500 transition-colors text-sm"
+                  className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-blue-500 transition-colors text-base"
                 />
                 {errors.email && (
                   <p className="mt-1 text-xs text-red-400">{errors.email.message}</p>
@@ -187,7 +187,7 @@ export function Contacto() {
                   type="text"
                   placeholder="Propuesta de proyecto / Oportunidad"
                   {...register('asunto', { required: 'El asunto es obligatorio' })}
-                  className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-blue-500 transition-colors text-sm"
+                  className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-blue-500 transition-colors text-base"
                 />
                 {errors.asunto && (
                   <p className="mt-1 text-xs text-red-400">{errors.asunto.message}</p>
@@ -210,7 +210,7 @@ export function Contacto() {
                     required: 'El mensaje es obligatorio',
                     minLength: { value: 10, message: 'Mínimo 10 caracteres' },
                   })}
-                  className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-blue-500 transition-colors text-sm resize-none"
+                  className="w-full px-4 py-3 rounded-lg bg-[#0a0a0f] border border-white/10 text-white placeholder-zinc-600 focus:outline-none focus:border-blue-500 transition-colors text-base resize-none"
                 />
                 {errors.mensaje && (
                   <p className="mt-1 text-xs text-red-400">{errors.mensaje.message}</p>
@@ -236,7 +236,7 @@ export function Contacto() {
               <button
                 type="submit"
                 disabled={status === 'loading'}
-                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 disabled:opacity-50 text-white font-semibold text-sm tracking-wider uppercase shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-200"
+                className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-lg bg-gradient-to-r from-blue-600 to-indigo-600 hover:from-blue-500 hover:to-indigo-500 disabled:opacity-50 text-white font-semibold text-xs sm:text-sm tracking-wider uppercase shadow-lg shadow-blue-500/25 hover:shadow-blue-500/40 transition-all duration-200"
               >
                 {status === 'loading' ? (
                   <span>Enviando mensaje...</span>
