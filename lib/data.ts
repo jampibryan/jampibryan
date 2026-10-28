@@ -111,37 +111,51 @@ export const STATS: StatItem[] = [
   { number: '2+', label: 'Años de experiencia' },
   { number: '5+', label: 'Proyectos completados' },
   { number: '10+', label: 'Certificaciones' },
-  { number: '2', label: 'Áreas de especialización' },
+  { number: '6', label: 'Áreas de especialización' },
 ];
 
 export const COMPETENCIES: CompetencyItem[] = [
   {
     title: 'Full Stack Development',
     description:
-      'Desarrollo de aplicaciones web completas, desde el frontend con React y JavaScript hasta el backend con C#, Spring Boot y Laravel.',
+      'Desarrollo de aplicaciones web modernas y escalables de extremo a extremo, combinando interfaces reactivas con lógica backend robusta bajo principios Clean Code.',
     icon: '💻',
-    tags: ['React', 'C#', 'Spring Boot', 'Laravel', 'TypeScript', 'Node.js'],
+    tags: ['React', 'TypeScript', 'C# / .NET', 'Spring Boot', 'Laravel', 'Tailwind CSS'],
+  },
+  {
+    title: 'Arquitectura & Microservicios',
+    description:
+      'Diseño de sistemas desacoplados bajo Clean Architecture, microservicios independientes e integración de APIs críticas de facturación electrónica y entidades regulatorias (SUNAT).',
+    icon: '🧩',
+    tags: ['Microservicios', 'Clean Architecture', 'REST APIs', 'Integración SUNAT', 'DDD'],
+  },
+  {
+    title: 'DevOps, Cloud & CI/CD',
+    description:
+      'Automatización del ciclo de vida del software con pipelines CI/CD, contenedorización de aplicaciones con Docker, control de versiones avanzado y despliegues continuos en la nube.',
+    icon: '☁️',
+    tags: ['Docker', 'CI/CD', 'Git & GitHub', 'Vercel', 'Linux / Bash', 'Cloud Deploy'],
+  },
+  {
+    title: 'Data Science, IA & Analytics',
+    description:
+      'Análisis exploratorio de datos (EDA), diseño de dashboards estratégicos en Power BI, modelado predictivo con Python e integración de asistentes de Inteligencia Artificial para consultas en lenguaje natural.',
+    icon: '📊',
+    tags: ['Python', 'Power BI', 'SQL Server', 'Machine Learning', 'IA Generativa', 'EDA'],
+  },
+  {
+    title: 'Desarrollo Móvil Multiplataforma',
+    description:
+      'Creación y mantenimiento de aplicaciones móviles para Android e iOS con React Native y Expo, digitalizando la gestión interna de boletas, reportes y procesos operativos.',
+    icon: '📱',
+    tags: ['React Native', 'Expo', 'Mobile UI/UX', 'Cross-Platform', 'Offline First'],
   },
   {
     title: 'Soporte TI & Infraestructura',
     description:
-      'Soporte técnico a nivel corporativo, administración de redes, mantenimiento de equipos y gestión de infraestructura tecnológica.',
+      'Administración de infraestructura corporativa, configuración y mantenimiento de redes LAN, gestión de servidores Windows Server, soporte técnico a usuarios y entornos ERP (SAP MM/FI).',
     icon: '🖥️',
-    tags: ['Redes', 'SAP', 'Active Directory', 'Help Desk', 'Windows Server'],
-  },
-  {
-    title: 'Data Science & IA',
-    description:
-      'Análisis de datos, visualización con Power BI, modelado predictivo con Python y aplicación de técnicas de Machine Learning.',
-    icon: '📊',
-    tags: ['Python', 'Power BI', 'SQL', 'Machine Learning', 'Data Analysis'],
-  },
-  {
-    title: 'Automatización de Procesos',
-    description:
-      'Automatización de tareas repetitivas, integración de sistemas y optimización de flujos de trabajo para mayor productividad.',
-    icon: '⚙️',
-    tags: ['APIs', 'Scripts', 'RPA', 'CI/CD', 'Power Automate'],
+    tags: ['Windows Server', 'Redes LAN', 'SAP MM/FI', 'Active Directory', 'Help Desk L2'],
   },
 ];
 
