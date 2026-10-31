@@ -211,11 +211,11 @@ export const EXPERIENCES: ExperienceItem[] = [
     location: 'Casma, Perú',
     year: 'Ene 2026 – Oct 2026',
     description: [
-      'Diseñé y desarrollé desde cero Chavín Prime, un ERP empresarial orientado a integrar procesos de distintas áreas, incluyendo la gestión operativa y la trazabilidad de la materia prima, desde el levantamiento de requerimientos hasta la implementación de funcionalidades.',
-      'Desarrollé funcionalidades backend con C#/.NET bajo los principios de Clean Architecture, utilizando SQL Server para la gestión de datos y React para la construcción de interfaces web.',
+      'Diseñé y desarrollé desde cero Chavín Prime de forma colaborativa, un ERP empresarial orientado a integrar procesos de distintas áreas, incluyendo la gestión operativa y la trazabilidad de la materia prima, desde el levantamiento de requerimientos hasta la implementación de funcionalidades.',
+      'Incorporé funcionalidades backend con C#/.NET bajo los principios de Clean Architecture, utilizando SQL Server para la gestión de datos y React para la construcción de interfaces web.',
       'Desarrollé un microservicio para la gestión y emisión de Guías de Remisión Electrónicas, integrado con Chavín Prime y SUNAT para la transmisión y validación de documentos electrónicos.',
-      'Participé en el desarrollo de PRIME, un asistente de inteligencia artificial que permite consultar mediante lenguaje natural información del sistema y datos operativos actualizados de la empresa.',
-      'Implementé reportes y visualizaciones de información para facilitar el seguimiento de procesos, el análisis de datos y la toma de decisiones empresariales.',
+      'Implementé en el desarrollo de PRIME, un asistente de inteligencia artificial que permite consultar mediante lenguaje natural información del sistema y datos operativos actualizados de la empresa.',
+      'Generé reportes y visualizaciones de información para facilitar el seguimiento de procesos, el análisis de datos y la toma de decisiones empresariales.',
       'Participé en el desarrollo de una aplicación móvil con React Native y Expo para la gestión de boletas de Recursos Humanos, contribuyendo a la digitalización de procesos internos.',
     ],
     tags: [
@@ -240,7 +240,7 @@ export const EXPERIENCES: ExperienceItem[] = [
       'Desarrollé dashboards en Power BI para el monitoreo de indicadores y la visualización de información del sistema SITC, facilitando el análisis de datos para la toma de decisiones.',
       'Realicé procesos de limpieza, transformación y validación de datos con Excel, mejorando la calidad y confiabilidad de la información.',
       'Automaticé la elaboración y actualización de reportes mediante herramientas de Excel y Power BI, optimizando el procesamiento de información operativa.',
-      'Realicé análisis exploratorio de datos (EDA) para identificar tendencias, variaciones e inconsistencias en los registros, generando información útil para la gestión institucional.',
+      'Implementé análisis exploratorio de datos (EDA) para identificar tendencias, variaciones e inconsistencias en los registros, generando información útil para la gestión institucional.',
       'Diseñé visualizaciones e informes analíticos para comunicar hallazgos y facilitar la interpretación de datos por parte de los responsables de gestión.',
     ],
     tags: [

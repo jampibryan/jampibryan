@@ -23,7 +23,7 @@ import { Tag } from '@/components/ui/Tag';
 // Helper para asignar un ícono temático según el contenido del logro
 function getBulletIcon(text: string) {
   const lower = text.toLowerCase();
-  if (lower.includes('inteligencia artificial') || lower.includes('ia') || lower.includes('prime')) {
+  if (lower.includes('inteligencia artificial') || (/\b(ia|prime)\b/i.test(text) && lower.includes('asistente'))) {
     return <Sparkles className="w-4 h-4 text-cyan-400 flex-shrink-0 mt-0.5" />;
   }
   if (lower.includes('móvil') || lower.includes('react native') || lower.includes('expo')) {
@@ -71,12 +71,17 @@ function renderHighlightedText(text: string) {
   ];
 
   // Regex para envolver palabras clave
-  const regex = new RegExp(`(${keywords.map((k) => k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')).join('|')})`, 'gi');
+  const sortedKeywords = [...keywords].sort((a, b) => b.length - a.length);
+  const pattern = sortedKeywords
+    .map((k) => `(?<![\\p{L}\\p{N}])${k.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}(?![\\p{L}\\p{N}])`)
+    .join('|');
+  const regex = new RegExp(`(${pattern})`, 'giu');
   const parts = text.split(regex);
 
   return (
     <>
       {parts.map((part, index) => {
+        if (!part) return null;
         const isKeyword = keywords.some((k) => k.toLowerCase() === part.toLowerCase());
         if (isKeyword) {
           return (
