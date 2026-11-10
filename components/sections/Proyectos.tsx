@@ -1,75 +1,67 @@
-'use client';
-
-import React from 'react';
-import { ExternalLink, FolderGit2 } from 'lucide-react';
-import { PROJECTS } from '@/lib/data';
-import { SectionHeader } from '@/components/ui/SectionHeader';
+import { ImageIcon } from 'lucide-react';
 import { AnimatedSection } from '@/components/ui/AnimatedSection';
+import { SectionHeader } from '@/components/ui/SectionHeader';
 import { Tag } from '@/components/ui/Tag';
-import { GithubIcon } from '@/components/ui/SocialIcons';
+import { PROJECT_GROUPS } from '@/lib/data';
+import { EcosistemaEli } from './EcosistemaEli';
+import { ProyectoJarvis } from './ProyectoJarvis';
 
 export function Proyectos() {
   return (
-    <section id="proyectos" className="py-24 relative bg-[#0d0d14]/60">
-      <div className="max-w-6xl mx-auto px-6">
+    <section id="proyectos" className="scroll-mt-20 bg-[#0d0d14]/60 py-20 sm:py-24">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeader
-          title="Proyectos Destacados"
-          subtitle="Una muestra de las soluciones, aplicaciones y sistemas que he desarrollado"
+          title="Proyectos"
+          subtitle="Sistemas, aplicaciones y herramientas que he desarrollado para resolver necesidades concretas."
         />
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {PROJECTS.map((project, index) => (
-            <AnimatedSection
-              key={project.title}
-              delay={index * 0.1}
-              className="group p-8 rounded-2xl bg-[#16161f] border border-white/5 hover:border-blue-500/40 transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-500/10 flex flex-col justify-between"
-            >
-              <div>
-                <div className="flex items-center justify-between mb-6">
-                  <div className="w-12 h-12 rounded-xl bg-blue-500/10 border border-blue-500/20 flex items-center justify-center text-blue-400 group-hover:scale-110 transition-transform">
-                    <FolderGit2 size={24} />
-                  </div>
+        <div className="space-y-8 sm:space-y-10">
+          <EcosistemaEli />
+          {PROJECT_GROUPS.map((group) => (
+            <AnimatedSection key={group.title}>
+              <section
+                aria-label={group.title}
+                className="rounded-2xl border border-white/10 bg-[#111119] p-4 sm:p-6 lg:p-8"
+              >
+                <header className="mb-5 border-l-2 border-blue-500 pl-4 sm:mb-6">
+                  <h3 className="text-xl font-bold text-white sm:text-2xl">{group.title}</h3>
+                  {group.description && (
+                    <p className="mt-2 max-w-2xl text-sm leading-relaxed text-zinc-400">
+                      {group.description}
+                    </p>
+                  )}
+                </header>
 
-                  <div className="flex items-center gap-3">
-                    {project.repoUrl && (
-                      <a
-                        href={project.repoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Código en GitHub"
-                        className="text-zinc-400 hover:text-white transition-colors"
-                      >
-                        <GithubIcon size={20} />
-                      </a>
-                    )}
-                    {project.demoUrl && project.demoUrl !== '#' && (
-                      <a
-                        href={project.demoUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="Ver Demo en Vivo"
-                        className="text-zinc-400 hover:text-white transition-colors"
-                      >
-                        <ExternalLink size={20} />
-                      </a>
-                    )}
-                  </div>
+                <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+                  {group.projects.map((project) => project.demo === 'jarvis' ? (
+                    <ProyectoJarvis key={project.title} project={project} />
+                  ) : (
+                    <article
+                      key={project.title}
+                      className="grid min-w-0 grid-rows-[auto_1fr] gap-4 rounded-xl border border-white/10 bg-[#16161f] p-4 md:only:col-span-full md:only:grid-cols-[minmax(0,1fr)_minmax(0,2fr)] md:only:grid-rows-1"
+                    >
+                      <div className="flex aspect-[16/9] flex-col items-center justify-center gap-2 rounded-lg border border-dashed border-white/20 bg-[#0a0a0f] px-2 text-center text-xs text-zinc-400">
+                        <ImageIcon aria-hidden="true" size={22} className="text-zinc-500" />
+                        Espacio para captura
+                      </div>
+
+                      <div className="flex min-w-0 flex-col">
+                        <div className="mb-2 flex flex-wrap items-center gap-x-3 gap-y-1">
+                          <span className="text-xs font-semibold text-blue-300">{project.category}</span>
+                          {project.status && <Tag variant="muted">{project.status}</Tag>}
+                        </div>
+                        <h4 className="text-lg font-semibold text-white">{project.title}</h4>
+                        <p className="mt-2 mb-4 text-sm leading-relaxed text-zinc-400">
+                          {project.description}
+                        </p>
+                        <div className="mt-auto flex flex-wrap gap-2">
+                          {project.tags.map((tag) => <Tag key={tag}>{tag}</Tag>)}
+                        </div>
+                      </div>
+                    </article>
+                  ))}
                 </div>
-
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-blue-400 transition-colors">
-                  {project.title}
-                </h3>
-
-                <p className="text-zinc-400 text-sm leading-relaxed mb-6">
-                  {project.description}
-                </p>
-              </div>
-
-              <div className="flex flex-wrap gap-2 pt-4 border-t border-white/5">
-                {project.tags.map((tag) => (
-                  <Tag key={tag}>{tag}</Tag>
-                ))}
-              </div>
+              </section>
             </AnimatedSection>
           ))}
         </div>

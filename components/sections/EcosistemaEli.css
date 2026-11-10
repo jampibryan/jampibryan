@@ -1,0 +1,157 @@
+.eli-ecosystem {
+  padding: clamp(1rem, 3vw, 2rem);
+  border: 1px solid #478fff3d;
+  border-radius: 1rem;
+  background: radial-gradient(ellipse at 0 0, #152b48 0, #0b1426 46%, #080d1a 100%);
+}
+
+.eli-map {
+  position: relative;
+  isolation: isolate;
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  min-height: 16rem;
+  border: 1px solid #93baff29;
+  border-radius: 0.875rem;
+  background:
+    radial-gradient(ellipse at center, #193557c0, transparent 66%),
+    linear-gradient(#a3c4ff0b 1px, transparent 1px),
+    linear-gradient(90deg, #a3c4ff0b 1px, transparent 1px),
+    #080d1a;
+  background-size: auto, 24px 24px, 24px 24px, auto;
+}
+
+.eli-connections,
+.eli-nodes {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.eli-connections {
+  pointer-events: none;
+}
+
+.eli-orbit {
+  fill: none;
+  stroke: #89b4f52e;
+  stroke-dasharray: 3 5;
+}
+
+.eli-edge {
+  stroke: #89b4f55c;
+  stroke-width: 1.5;
+}
+
+.eli-active-edge {
+  stroke: var(--accent);
+  stroke-width: 2;
+  filter: drop-shadow(0 0 3px var(--accent));
+}
+
+.eli-data-pulse {
+  stroke: #fff;
+  stroke-width: 3;
+  stroke-linecap: round;
+  stroke-dasharray: 12 88;
+  filter: drop-shadow(0 0 4px var(--accent));
+  animation: eli-data-flow 1.3s linear infinite;
+}
+
+.eli-step-progress {
+  height: 100%;
+  transform-origin: left;
+  animation: eli-step-fill linear both;
+}
+
+@keyframes eli-data-flow {
+  to { stroke-dashoffset: -100; }
+}
+
+@keyframes eli-step-fill {
+  from { transform: scaleX(0); }
+  to { transform: scaleX(1); }
+}
+
+.eli-core,
+.eli-node {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  translate: -50% -50%;
+}
+
+.eli-core {
+  width: clamp(5rem, 13vw, 7rem);
+  aspect-ratio: 1;
+  gap: 0.2rem;
+  border: 1px solid #78adff75;
+  border-radius: 50%;
+  background: radial-gradient(circle at 50% 30%, #224d7c, #102039);
+  box-shadow: 0 0 1.75rem #478fff35, inset 0 0 1.25rem #478fff2e;
+  text-align: center;
+}
+
+.eli-node {
+  width: clamp(4.5rem, 15vw, 7rem);
+  min-height: 3.75rem;
+  gap: 0.35rem;
+  padding: 0.45rem 0.25rem;
+  border: 1px solid #a3c4ff38;
+  border-radius: 0.75rem;
+  background: linear-gradient(150deg, #213552, #0e1729 85%);
+  box-shadow: 0 0.45rem 0.8rem #040814a6, inset 0 1px #e7f1ff12;
+  color: #e4eeff;
+  font-size: 0.75rem;
+  font-weight: 650;
+  cursor: pointer;
+  transition: transform 180ms ease, border-color 180ms ease, box-shadow 180ms ease;
+}
+
+.eli-node svg {
+  color: var(--accent);
+}
+
+.eli-node[aria-selected='true'] {
+  border-color: var(--accent);
+  box-shadow: 0 0 1.1rem color-mix(in srgb, var(--accent) 40%, transparent), inset 0 1px #e7f1ff20;
+}
+
+.eli-node:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 4px;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .eli-node:hover {
+    z-index: 1;
+    transform: perspective(340px) translateY(-4px) rotateX(9deg) scale(1.04);
+    border-color: var(--accent);
+    box-shadow: 0 0 1rem color-mix(in srgb, var(--accent) 45%, transparent);
+  }
+}
+
+@media (min-width: 40rem) {
+  .eli-node {
+    min-height: 4.5rem;
+    font-size: 0.875rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .eli-data-pulse,
+  .eli-step-progress {
+    animation: none;
+  }
+
+  .eli-node {
+    transition: none;
+  }
+
+  .eli-node:hover {
+    transform: none;
+  }
+}

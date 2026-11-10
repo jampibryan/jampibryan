@@ -45,12 +45,17 @@ export interface CertificationItem {
 
 export interface ProjectItem {
   title: string;
+  category: string;
   description: string;
   tags: string[];
-  image?: string;
-  demoUrl?: string;
-  repoUrl?: string;
-  featured?: boolean;
+  status?: string;
+  demo?: 'jarvis';
+}
+
+interface ProjectGroup {
+  title: string;
+  description?: string;
+  projects: ProjectItem[];
 }
 
 export const PERSONAL_INFO = {
@@ -80,6 +85,7 @@ export const NAV_ITEMS: NavItem[] = [
   { label: 'Competencias', href: '#competencias' },
   { label: 'Habilidades', href: '#habilidades' },
   { label: 'Experiencia', href: '#experiencia' },
+  { label: 'Proyectos', href: '#proyectos' },
   { label: 'Certificaciones', href: '#certificaciones' },
   { label: 'Contacto', href: '#contacto' },
 ];
@@ -392,32 +398,48 @@ export const CERTIFICATIONS: CertificationItem[] = [
   },
 ];
 
-export const PROJECTS: ProjectItem[] = [
-  {
-    title: 'Portfolio Personal Next.js',
-    description:
-      'Sitio web moderno desarrollado con Next.js 16, React 19, TypeScript, Tailwind CSS y Framer Motion con arquitectura modular y optimización para Vercel.',
-    tags: ['Next.js', 'React', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
-    demoUrl: '#',
-    repoUrl: 'https://github.com/jampibryan',
-    featured: true,
+export const ELI_BOUTIQUE = {
+  title: 'Ecosistema Eli Boutique',
+  description:
+    'Tres herramientas conectadas para la gestión interna de una tienda de ropa. Permiten registrar ventas y compras, consultar la operación desde el celular y usar predicciones de ventas para planificar el inventario.',
+  projects: {
+    web: {
+      title: 'Eli Boutique Web',
+      category: 'Sistema web',
+      description:
+        'Centraliza las ventas, compras, productos y caja de la tienda. Su API comparte los datos de la operación con la app móvil y el panel de analítica.',
+      tags: ['Laravel', 'PHP', 'SQL Server'],
+    },
+    mobile: {
+      title: 'Eli Boutique Móvil',
+      category: 'Aplicación Android',
+      description:
+        'Permite consultar ventas, compras, productos y caja desde el celular. Lee los datos del sistema web mediante una API autenticada.',
+      tags: ['Flutter', 'Dart', 'API REST'],
+    },
+    analytics: {
+      title: 'Eli Boutique Analytics',
+      category: 'Panel de Streamlit',
+      description:
+        'Usa el historial de ventas para estimar cuántas unidades podrían venderse de cada producto en el mes seleccionado. Compara esa proyección con el stock disponible para orientar la reposición.',
+      tags: ['Python', 'Streamlit', 'TensorFlow'],
+    },
   },
+} satisfies { title: string; description: string; projects: Record<string, ProjectItem> };
+
+export const PROJECT_GROUPS: ProjectGroup[] = [
   {
-    title: 'Sistema de Gestión y Monitoreo TI',
-    description:
-      'Plataforma integral para seguimiento de incidencias técnicas, inventario de hardware y administración de infraestructura de red.',
-    tags: ['Full Stack', 'C#', '.NET', 'SQL Server', 'React'],
-    demoUrl: '#',
-    repoUrl: 'https://github.com/jampibryan',
-    featured: true,
-  },
-  {
-    title: 'Dashboard de Análisis de Datos & KPI',
-    description:
-      'Solución analítica desarrollada para visualización de métricas operativas con integración a bases de datos relacionales y reportes interactivos.',
-    tags: ['Python', 'Power BI', 'SQL', 'Data Analytics'],
-    demoUrl: '#',
-    repoUrl: 'https://github.com/jampibryan',
-    featured: true,
+    title: 'Proyectos independientes',
+    projects: [
+      {
+        title: 'Jarvis',
+        category: 'Asistente de escritorio',
+        status: 'En desarrollo',
+        demo: 'jarvis',
+        description:
+          'Asistente personal para Windows que recibe instrucciones en español por voz o texto. Permite buscar archivos, abrir aplicaciones y realizar tareas como tomar notas o iniciar temporizadores.',
+        tags: ['Python', 'Tkinter', 'Whisper'],
+      },
+    ],
   },
 ];
